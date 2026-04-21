@@ -1,0 +1,2 @@
+# dominicanrepublicplacestovisit.com
+dominicanrepublicplacestovisit.com
