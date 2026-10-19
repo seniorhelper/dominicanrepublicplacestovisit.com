@@ -6,7 +6,7 @@
 <title>Places To Visit in Dominican Republic | 2026 Travel Guide</title>
 <meta name="description" content="Discover the best places to visit in the Dominican Republic. Punta Cana, Santo Domingo, Cabarete, Samana, Jarabacoa and more. Real travel guide updated for 2026."/>
 <meta name="keywords" content="places to visit in Dominican Republic, Dominican Republic travel, best beaches Dominican Republic, things to do DR, Santo Domingo, Punta Cana, Samana, Cabarete, Jarabacoa, visit Dominican Republic 2026"/>
-<link rel="canonical" href="https://www.dominicanrepublicplacestovisit.com/"/>
+<link rel="canonical" href="https://dominicanrepublicplacestovisit.com/"/>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"/>
 <meta name="citation_title" content="Places To Visit in Dominican Republic — 2026 Travel Guide"/>
@@ -16,7 +16,7 @@
 <meta property="og:title" content="Places To Visit in Dominican Republic | 2026 Travel Guide"/>
 <meta property="og:description" content="The best places to visit in the Dominican Republic — beaches, mountains, history and hidden gems. Real guide, no fluff."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.dominicanrepublicplacestovisit.com/"/>
+<meta property="og:url" content="https://dominicanrepublicplacestovisit.com/"/>
 <meta property="og:image" content="https://raw.githubusercontent.com/seniorhelper/dominicanrepublicplacestovisit.com/main/images/places-to-visit-in-dominican-republic.jpg"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:locale:alternate" content="es_DO"/>
@@ -24,8 +24,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Places To Visit in Dominican Republic | 2026"/>
 <meta name="twitter:image" content="https://raw.githubusercontent.com/seniorhelper/dominicanrepublicplacestovisit.com/main/images/places-to-visit-in-dominican-republic.jpg"/>
-<link rel="alternate" hreflang="en" href="https://www.dominicanrepublicplacestovisit.com/"/>
-<link rel="alternate" hreflang="es" href="https://www.dominicanrepublicplacestovisit.com/es/"/>
+<link rel="alternate" hreflang="en" href="https://dominicanrepublicplacestovisit.com/"/>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/seniorhelper/dominicanrepublicplacestovisit.com/main/images/Dominican-republic-favicon.png"/>
 <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/seniorhelper/dominicanrepublicplacestovisit.com/main/images/Dominican-republic-favicon.png"/>
 <meta name="theme-color" content="#006B3F"/>
@@ -241,7 +240,20 @@ nav.hn a:not(.hcta){display:none}
 .net-links{flex-direction:column;align-items:center}
 }
 @media(max-width:390px){.hl img{height:46px;max-width:170px}.hero h1{font-size:1.9rem}}
-</style>
+
+    /* ── MOBILE MENU (tap to open) ── */
+    .mm-btn{display:none}
+    .mm-panel{display:none}
+    @media (max-width: 768px) {
+      .mm-btn{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;padding:0;margin-left:4px;background:none;border:0;cursor:pointer;color:#064e2c;flex-shrink:0;-webkit-tap-highlight-color:transparent}
+      .mm-btn span{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+      .mm-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+      .mm-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+      .mm-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+      .mm-panel.open{display:block;position:fixed;left:0;right:0;z-index:1001;background:#ffffff;box-shadow:0 14px 28px rgba(0,0,0,.18);max-height:calc(100vh - 110px);overflow-y:auto}
+      .mm-panel a{display:block;padding:15px 20px;font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;color:#064e2c;border-top:1px solid rgba(0,107,63,.1)}
+    }
+  </style>
 </head>
 <body>
 <!-- LANG BAR -->
@@ -274,8 +286,17 @@ nav.hn a:not(.hcta){display:none}
       &#127796; <span data-en="Advertise" data-es="Publicidad">Advertise</span>
       <small data-en="Open to Barter" data-es="Abiertos al Trueque">Open to Barter</small>
     </a>
-  </nav>
+  
+      <button type="button" class="mm-btn" id="mm-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mm-panel"><span></span><span></span><span></span></button>
+    </nav>
 </header>
+  <nav class="mm-panel" id="mm-panel" aria-label="Mobile menu">
+    <a href="/" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#destinations" data-en="Destinations" data-es="Destinos">Destinations</a>
+    <a href="#beaches" data-en="Beaches" data-es="Playas">Beaches</a>
+    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+  </nav>
+
 
 <!-- HERO -->
 <section class="hero" aria-label="Dominican Republic Places To Visit hero">
@@ -492,7 +513,7 @@ nav.hn a:not(.hcta){display:none}
     <div class="net-links">
       <a href="https://www.cabaretebeachdominicanrepublic.com/" class="net-link featured" target="_blank" rel="noopener nofollow">&#129745; Cabarete Beach Guide</a>
       <a href="https://www.dominicanrepublicvacationspots.com/" class="net-link" target="_blank" rel="noopener nofollow">&#127955; DR Vacation Spots</a>
-      <a href="https://www.dominicanrepublicplacestovisit.com/" class="net-link" target="_blank" rel="noopener">&#128506; Places To Visit DR</a>
+      <a href="https://dominicanrepublicplacestovisit.com/" class="net-link" target="_blank" rel="noopener">&#128506; Places To Visit DR</a>
       <a href="https://www.cabaretecondosforsale.com/" class="net-link" target="_blank" rel="noopener nofollow">&#127968; Cabarete Condos For Sale</a>
     </div>
   </div>
@@ -516,6 +537,7 @@ nav.hn a:not(.hcta){display:none}
         <div class="sk">&#128231; <span data-en="Get In Touch" data-es="Cont&aacute;ctanos">Get In Touch</span></div>
         <h2 class="sec" data-en="List Your Business or &lt;em&gt;Ask a Question&lt;/em&gt;" data-es="Lista Tu Negocio o &lt;em&gt;Haz una Pregunta&lt;/em&gt;">List Your Business or <em>Ask a Question</em></h2>
         <p style="font-size:.95rem;color:var(--tl);line-height:1.75;margin-bottom:20px;font-family:'Libre Baskerville',serif;" data-en="Whether you want to advertise your Dominican Republic business, ask about barter arrangements, or just have a travel question &mdash; drop us a message. We read every email." data-es="Ya sea que quieras anunciar tu negocio en la Rep&uacute;blica Dominicana, preguntar sobre acuerdos de trueque, o simplemente tener una pregunta de viaje &mdash; env&iacute;anos un mensaje. Leemos cada correo.">Whether you want to advertise your Dominican Republic business, ask about barter arrangements, or just have a travel question &mdash; drop us a message. We read every email.</p>
+          <p style="font-size:.9rem;color:var(--tl);line-height:1.7;margin-bottom:20px;" data-en="Want your business found on Google and in AI answers too? &lt;a href=&quot;https://seodominicanrepublic.com/&quot; rel=&quot;noopener&quot;&gt;SEO Dominican Republic&lt;/a&gt; works with DR hotels, tour operators and restaurants." data-es="¿Quieres que tu negocio también aparezca en Google y en las respuestas de IA? &lt;a href=&quot;https://seodominicanrepublic.com/&quot; rel=&quot;noopener&quot;&gt;SEO Dominican Republic&lt;/a&gt; trabaja con hoteles, operadores turísticos y restaurantes en RD.">Want your business found on Google and in AI answers too? <a href="https://seodominicanrepublic.com/" rel="noopener">SEO Dominican Republic</a> works with DR hotels, tour operators and restaurants.</p>
         <div style="display:flex;flex-direction:column;gap:12px;">
           <div style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--green-d);font-weight:600;">&#128231; <span data-en="Use the form to reach us" data-es="Usa el formulario para escribirnos">Use the form to reach us</span></div>
           <div style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--tl);">&#127796; <span data-en="Open to barter &mdash; meals, stays, lessons, experiences" data-es="Abiertos al trueque &mdash; comidas, estadias, lecciones, experiencias">Open to barter &mdash; meals, stays, lessons, experiences</span></div>
@@ -587,7 +609,7 @@ nav.hn a:not(.hcta){display:none}
       <ul>
         <li><a href="https://www.cabaretebeachdominicanrepublic.com/" target="_blank" rel="noopener nofollow">Cabarete Beach</a></li>
         <li><a href="https://www.dominicanrepublicvacationspots.com/" target="_blank" rel="noopener nofollow">DR Vacation Spots</a></li>
-        <li><a href="https://www.dominicanrepublicplacestovisit.com/">DR Places To Visit</a></li>
+        <li><a href="https://dominicanrepublicplacestovisit.com/">DR Places To Visit</a></li>
         <li><a href="https://www.cabaretecondosforsale.com/" target="_blank" rel="noopener nofollow">Cabarete Condos</a></li>
       </ul>
     </div>
@@ -612,9 +634,9 @@ nav.hn a:not(.hcta){display:none}
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://www.dominicanrepublicplacestovisit.com/#website",
+      "@id": "https://dominicanrepublicplacestovisit.com/#website",
       "name": "Dominican Republic Places To Visit",
-      "url": "https://www.dominicanrepublicplacestovisit.com/",
+      "url": "https://dominicanrepublicplacestovisit.com/",
       "description": "Guide to the best places to visit in the Dominican Republic including beaches, mountains, colonial history and adventure.",
       "inLanguage": [
         "en",
@@ -629,7 +651,7 @@ nav.hn a:not(.hcta){display:none}
     },
     {
       "@type": "TouristDestination",
-      "@id": "https://www.dominicanrepublicplacestovisit.com/#destination",
+      "@id": "https://dominicanrepublicplacestovisit.com/#destination",
       "name": "Dominican Republic",
       "description": "The Dominican Republic is the Caribbean's most geographically diverse country, home to the highest peak (Pico Duarte 3098m), oldest European city (Santo Domingo 1498), and world-class beaches including Punta Cana, Playa Rincon, and Cayo Arena.",
       "geo": {
@@ -689,7 +711,7 @@ nav.hn a:not(.hcta){display:none}
           "@type": "ListItem",
           "position": 1,
           "name": "Dominican Republic Places To Visit",
-          "item": "https://www.dominicanrepublicplacestovisit.com/"
+          "item": "https://dominicanrepublicplacestovisit.com/"
         }
       ]
     },
@@ -967,6 +989,11 @@ renderFAQ('en');
     });
   });
 })();
+</script>
+
+<script>
+/* mobile menu: tap to open, closes on link tap, Escape or resize to desktop */
+(function(){var b=document.getElementById('mm-btn'),p=document.getElementById('mm-panel'),h=document.querySelector('header');if(!b||!p||!h)return;function set(o){b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');p.classList.toggle('open',o);if(o)p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';}b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true');});p.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});window.addEventListener('resize',function(){if(window.innerWidth>768)set(false);});window.addEventListener('scroll',function(){if(p.classList.contains('open'))p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';},{passive:true});})();
 </script>
 </body>
 </html>
