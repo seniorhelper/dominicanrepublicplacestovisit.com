@@ -261,6 +261,7 @@ footer img.fbl{filter:none!important}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FX41YDVB47"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FX41YDVB47');</script>
 <script>(function(){function s(n,p){try{gtag('event',n,p)}catch(e){}}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)s('phone_click',{phone_number:a.getAttribute('href').slice(4),link_text:(a.textContent||'').trim().slice(0,60)})},true);document.addEventListener('submit',function(e){var f=e.target;if(!f||f.getAttribute('role')==='search'||/search/i.test(f.id+' '+f.className+' '+(f.action||'')))return;var id=f.id||f.getAttribute('name')||f.className||'form';if(/estimat|calc/i.test(id+' '+(f.action||'')))s('estimator_use',{form_id:id});s('generate_lead',{form_id:id})},true);window.etAB=function(n,v){var k='etab_'+n,x;try{x=localStorage.getItem(k)}catch(e){}if(!x||v.indexOf(x)<0){x=v[Math.floor(Math.random()*v.length)];try{localStorage.setItem(k,x)}catch(e){}}s('ab_view',{experiment:n,variant:x});try{gtag('set','user_properties',{['ab_'+n]:x})}catch(e){}document.documentElement.setAttribute('data-ab-'+n,x);return x}})();</script>
+<style id="egx-css">.egx{max-width:980px;margin:2.2rem auto;padding:1.4rem 1.2rem;border:1px solid rgba(0,0,0,.12);border-radius:14px;background:#fff;color:#1b2730}.egx h2,.egx h3{margin:0 0 .4rem;font-size:1.35rem;line-height:1.25;color:#1b2730}.egx p{margin:0 0 .8rem;color:#3b4852;font-size:.98rem}.egx .eg-widget{min-height:280px}.egx .egx-disc{font-size:.82rem;color:#55626c;margin:.8rem 0 0}.egx .egx-disc a{color:inherit;text-decoration:underline}@media(max-width:600px){.egx{margin:1.6rem 12px;padding:1rem .8rem}.egx .eg-widget{min-height:400px}}</style>
 </head>
 <body>
 <!-- LANG BAR -->
@@ -527,6 +528,13 @@ footer img.fbl{filter:none!important}
 </div>
 
 <!-- FAQ -->
+
+<section class="egx" aria-label="Find a hotel near the places you want to see">
+  <h2>Find a hotel near the places you want to see</h2>
+  <p>Search a town such as Santo Domingo, Punta Cana, Puerto Plata, Samaná or Jarabacoa for your dates.</p>
+  <div class="eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays" data-network="pz" data-camref="1100l5QSrc" data-pubref="drpv-places"></div>
+  <p class="egx-disc"><strong>Affiliate disclosure:</strong> Dominican Republic Places To Visit is part of the Expedia Group affiliate program. If you book through this search, we may earn a commission at no extra cost to you. Prices and availability come from Expedia and change often. It does not affect which places we write about. <a href="/privacy/#affiliate">How we make money</a>.</p>
+</section>
 <section style="padding:48px 0;" id="faq">
   <div class="pw">
     <div class="sk">&#10067; FAQ</div>
@@ -634,6 +642,7 @@ footer img.fbl{filter:none!important}
     <p>&copy; 2026 DominicanRepublicPlacesToVisit.com &mdash; <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
     <p class="pby">&#127796; <span data-en="Powered by" data-es="Desarrollado por">Powered by</span> <a href="https://www.eyetoad.com" target="_blank" rel="noopener nofollow">Eye To Ad Media</a> &nbsp;&middot;&nbsp; <span data-en="Digital Marketing &amp; SEO" data-es="Marketing Digital y SEO">Digital Marketing &amp; SEO</span></p>
   </div>
+<p style="text-align:center;font-size:.85rem;margin:14px 0"><a href="/about/" style="color:inherit">About</a> &middot; <a href="/contact/" style="color:inherit">Contact</a> &middot; <a href="/privacy/" style="color:inherit">Privacy &amp; affiliate disclosure</a></p>
 </footer>
 <script type="application/ld+json">
 {
@@ -1002,5 +1011,6 @@ renderFAQ('en');
 /* mobile menu: tap to open, closes on link tap, Escape or resize to desktop */
 (function(){var b=document.getElementById('mm-btn'),p=document.getElementById('mm-panel'),h=document.querySelector('header');if(!b||!p||!h)return;function set(o){b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');p.classList.toggle('open',o);if(o)p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';}b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true');});p.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});window.addEventListener('resize',function(){if(window.innerWidth>768)set(false);});window.addEventListener('scroll',function(){if(p.classList.contains('open'))p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';},{passive:true});})();
 </script>
+<script class="eg-widgets-script" src="https://creator.expediagroup.com/products/widgets/assets/eg-widgets.js" defer></script>
 </body>
 </html>
